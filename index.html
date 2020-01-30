@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Créative</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="components/canvas/tools/lightCurrentTool/lightCurrentTool.css">
+	<link rel="stylesheet" type="text/css" href="components/theApp/about.css">
+	<link rel="stylesheet" type="text/css" href="components/intro/intro.css">
+	<link rel="stylesheet" type="text/css" href="components/theApp/creative-app.css">
+	<link rel="shortcut icon" type="image/png" href="components/theApp/favicon.png"/>
+</head>
+<body onselectstart="return false">	
+	<div class="intro" id="intro">
+		<div class="left-side" id="intro-left-side">
+			<div class="desc">
+				<div class="title-desc">Créative</div>
+				<div class="sub-desc">free app for pixel art</div>
+			</div>							
+			<div class="funcs">				
+				<div class="funcs-item">draw pictures</div>
+				<div class="funcs-item">create animations</div>
+				<div class="funcs-item">export your projects</div>
+				<div class="funcs-item">view of your project in real time</div>
+			</div>
+			<div class="button-holder-left"><div class="start-app-left" id="launchTheAppLeftDom">Launch</div></div>
+			<div class="author-left" id="leftLA">by lost</div>
+		</div>
+		<div class="right-side" id="intro-right-side">
+			<div class="screenshot-overview"></div>
+			<div class="animation-overview">
+				<img src="components/intro/demo-1.gif">
+				<img src="components/intro/demo-2.gif">
+				<img src="components/intro/demo-3.gif">
+				<img src="components/intro/demo-4.gif">
+			</div>
+			<div class="button-holder-right"><div class="start-app-right" id="launchTheAppRightDom">app</div></div>
+			<div class="author-right" id="rightLA">angeles</div>
+		</div>				
+	</div>
+
+	<div class="creative-app" id="creative-app">
+		<div class="menu-bar" id="menu-bar">
+			<div class="menu-item" id="thecreativeDom">creative</div> 	
+			<div class="menu-item" id="fileDom">file</div>			
+			<div class="menu-item" id="exportDom">export</div>
+			<div class="menu-item" id="toolSizeDom">tool size</div>
+			<div class="menu-item" id="canvasDom">canvas</div>			
+			<div class="menu-item" id="animationDom">animation</div>
+			<div class="menu-item" id="keyboardDom">keyboard</div>
+		</div>
+		<div class="sub-menu" id="sub-menu">
+			<div class="shadow" id="creative-menu">
+				<div title="About Créative" class="sub-menu-items" id="aboutCreativeDom">About</div>					
+			</div>
+			<div class="shadow" id="file-menu">
+				<div title="Save project" class="sub-menu-items" id="saveSession">Save</div>
+				<div title="Load project" class="sub-menu-items" id="loadSession">Load</div>
+				<div title="Clear canvas area" class="sub-menu-items" id="clearCanvas">Clear</div>
+			</div>
+			<div class="shadow" id="export-menu">
+				<div title="Export animation to GIF (G)" class="sub-menu-items" id="toGifDom">To GIF</div>
+				<div title="Export canvas to PNG (N)" class="sub-menu-items" id="toPngDom">To PNG</div>
+			</div>
+			<div class="shadow" id="toolSize">
+				<div title="Set tool size to 1px" class="sub-menu-items" id="onePxSizeDom">1 pixel</div>
+				<div title="Set tool size to 2px" class="sub-menu-items" id="twoPxSizeDom">2 pixel</div>
+				<div title="Set tool size to 3px" class="sub-menu-items" id="threePxSizeDom">3 pixel</div>
+				<div title="Set tool size to 4px" class="sub-menu-items" id="fourthPxSizeDom">4 pixel</div>
+			</div>
+			<div class="shadow" id="canvas-menu">
+				<div title="Set canvas size to 32" class="sub-menu-items" id="thirtyTwoCanvasDom">32x32</div>
+				<div title="Set canvas size to 64" class="sub-menu-items" id="sixtyFourCanvasDom">64x64</div>
+				<div title="Set canvas size to 128" class="sub-menu-items" id="hundredAndTwentyEightCanvasDom">128x128</div>
+			</div>
+			<div class="shadow" id="animation-menu">
+				<div title="Full preview mode" class="sub-menu-items" id="fullPreviewDom">Full preview</div>
+				<div title="Delete frame (D)" class="sub-menu-items" id="deleteFrameDom">Delete frame</div>
+				<div title="Copy frame (Y)" class="sub-menu-items" id="copyFrameDom">Copy frame</div>
+			</div>
+			<div class="shadow" id="keyboard-menu">
+				<div title="Open hotkeys settings" class="sub-menu-items" id="hotkeysDom">Hotkeys</div>
+			</div>
+		</div>
+		<div class="interface" id="interface">
+			<div class="colors-and-tools">
+				<div class="creative-app-tools" id="creative-app-tools">
+					<div class="collapse" id="creativeAppToolsCollapseDom">
+						<div class="creative-app-tools-collapse-title" id="creative-app-tools-collapse-title">collapse</div>
+						<div class="creative-app-tools-expand-title" id="creative-app-tools-expand-title">expand</div>
+					</div>
+					<div>
+						<div title="Pencil (P)" class="app-tool" id="thePencilTool">Pencil</div>
+					</div>
+					<div>
+						<div title="Paint Bucket (B)" class="app-tool" id="thePaintBucketTool">Paint Bucket</div>
+					</div>
+					<div>
+						<div title="Stroke (S)" class="app-tool" id="theStrokeTool">Stroke</div>
+					</div>	
+					<div>
+						<div title="Erase (E)" class="app-tool" id="theEraseTool">Erase</div>
+					</div>
+					<div>
+						<div title="Add animation (A)" class="app-tool" id="theAddAnimationTool">Add animation</div>
+					</div>
+					<div>
+						<div title="Color picker (C)" class="app-tool" id="theColorPickerTool">Color picker</div>
+					</div>				
+				</div>
+				<div class="color-selection" id="color-selection">
+					<div class="collapse" id="colorSectionCollapseDom">
+						<div class="creative-app-tools-collapse-title" id="color-section-collapse-title">collapse</div>
+						<div class="creative-app-tools-expand-title" id="color-section-expand-title">expand</div>
+					</div>
+					<div class="color-row first-row">												
+						<input class="color" type="color" name="bg" id="firstColor" value="#EC12BA">
+						<div class="changeColor" title="Change color" id="setFirstColorDom">Change</div>	
+						<div class="colorSelect" title="Select 1 color (O)" id="pickFirstColorDom">1 color</div>			
+					</div>
+					<div class="color-row second-row">
+						<input class="color" type="color" name="bgtwo" id="secondColor" value="#5B2C6F">
+						<div class="changeColor" title="Change color" id="setSecondColorDom">Change</div>
+						<div class="colorSelect" title="Select 2 color (L)" id="pickSecondColorDom">2 color</div>							
+					</div>
+				</div>
+			</div>
+			<div class="fake-canvas" id="fake-canvas"><div id="canvas-hello">click to create</div></div>
+			<canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+			<div class="keyboard-modal" id="keyboard-modal">
+				<div class="keyboard-modal-title">reassign shortcuts</div>
+				<div class="keyboard-modal-subtitle" id="uniqueLetters">Please use a single unique letter of the English alphabet</div>
+				<div class="keyboard-modal-content">
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Pencil</div>
+						<textarea class="keyboard-values-row-value" id="pencilTextArea">p</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Paint Bucket</div>
+						<textarea class="keyboard-values-row-value" id="paintBucketTextArea">b</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Stroke</div>
+						<textarea class="keyboard-values-row-value" id="strokeTextArea">s</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Erase</div>
+						<textarea class="keyboard-values-row-value" id="eraseTextArea">r</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Start/Add animation</div>
+						<textarea class="keyboard-values-row-value" id="startAnimTextArea">a</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Color Picker</div>
+						<textarea class="keyboard-values-row-value"id="colorPickerTextArea">c</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Export to PNG</div>
+						<textarea class="keyboard-values-row-value"id="PNGTextArea">n</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Export to GIF</div>
+						<textarea class="keyboard-values-row-value"id="GIFTextArea">g</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Delete Frame</div>
+						<textarea class="keyboard-values-row-value"id="deleteFrameTextArea">d</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Copy Frame</div>
+						<textarea class="keyboard-values-row-value"id="copyFrameTextArea">y</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">First color</div>
+						<textarea class="keyboard-values-row-value"id="firstColorTextArea">o</textarea>
+					</div>
+					<div class="keyboard-values-row">
+						<div class="keyboard-values-row-item">Second Color</div>
+						<textarea class="keyboard-values-row-value"id="secondColorTextArea">l</textarea>
+					</div>
+				</div>
+				<div class="keyboardSaveCancel">
+					<div class="button saveBtn" id="SaveKeyboardModalDom">Save</div>
+					<div class="button" id="offKeyboardModalDom">Cancel</div>
+				</div>
+			</div>			
+			<div class="anim-preview-and-anim-tool">
+				<div class="animation-preview" id="animation-preview">
+					<div class="collapse" id="animationPreviewCollapseDom">
+						<div class="creative-app-tools-collapse-title" id="animation-preview-collapse-title">collapse</div>
+						<div class="creative-app-tools-expand-title" id="animation-preview-expand-title">expand</div>
+					</div>
+					<img class="the-animation-preview" id="previewWindow" src="https://sib3ri4nhusky.github.io/favicon.png">
+					<div class="rangeFpsContainer" id="rangeFpsContainer"><input class="rangeFps" type="range" id="rangeFps" name="rangeFps" min="1" max="24" value="1" step="1"></div>
+				</div>
+				<div class="creative-app-anim" id="creative-app-anim">
+					<div class="collapse" id="animationCollapseDom">
+						<div class="creative-app-tools-collapse-title" id="animation-collapse-title">collapse</div>
+						<div class="creative-app-tools-expand-title" id="animation-expand-title">expand</div>
+					</div>
+					<div id="theSlides"></div>
+				</div>
+			</div>
+		</div>
+		<div class="aboutApp" id="aboutApp">
+			<div class="aboutApp-name">Créative</div>
+			<div class="aboutApp-ver">alpha</div>
+			<div class="aboutApp-info">
+				<div class="aboutApp-author__item">Nicholas Novoselov</div>
+				<div class="aboutApp-author__contacts" id="aboutAuthorDom">github.com/LostAngeles</div>
+			</div>
+			<div class="aboutApp-info">
+				<div class="aboutApp-author__item">images by</div>
+				<div class="aboutApp-author__contacts">pexels.com & iconarchive.com</div>						
+			</div>
+			<div class="aboutApp-info">
+				<div class="aboutApp-author__item">js libraries</div>
+				<div class="aboutApp-author__contacts">github.com/yahoo</div>							
+			</div>
+			<div class="aboutAppBack" id="aboutAppExit">go back</div>	
+		</div>			
+	</div>
+
+
+
+	<script type="text/javascript" src="components/intro/intro.js"></script>
+	<script type="text/javascript" src="components/theApp/theApp.js"></script>
+	<script type="text/javascript" src="components/theApp/about.js"></script>
+	<script type="text/javascript" src="components/theApp/collapseOrExpand.js"></script>
+	<script type="text/javascript" src="components/topMenu/showOrHideElements.js"></script>
+	<script type="text/javascript" src="components/topMenu/menuItems/menuFile.js"></script>
+	<script type="text/javascript" src="components/topMenu/menuItems/menuExport.js"></script>
+	<script type="text/javascript" src="components/topMenu/menuItems/menuToolSize.js"></script>
+	<script type="text/javascript" src="components/topMenu/menuItems/menuCanvas.js"></script>
+	<script type="text/javascript" src="components/topMenu/menuItems/menuAnimation.js"></script>
+	<script type="text/javascript" src="components/topMenu/menuItems/menuKeyboard.js"></script>
+	<script type="text/javascript" src="components/canvas/canvasInitialization.js"></script>
+	<script type="text/javascript" src="components/canvas/keyboard.js"></script>		
+	<script type="text/javascript" src="components/canvas/tools/lightCurrentTool/lightCurrentTool.js"></script>
+
+	<script type="text/javascript" src="components/canvas/exportToGIFPNG/gifshot.js"></script>
+</body>
+</html>
